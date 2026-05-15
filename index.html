@@ -71,6 +71,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-# 列表：可修改，有序，按顺序存储" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/05/15/#%20%E5%88%97%E8%A1%A8%EF%BC%9A%E5%8F%AF%E4%BF%AE%E6%94%B9%EF%BC%8C%E6%9C%89%E5%BA%8F%EF%BC%8C%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8/" class="article-date">
+  <time class="dt-published" datetime="2026-05-14T16:00:00.000Z" itemprop="datePublished">2026-05-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/05/15/#%20%E5%88%97%E8%A1%A8%EF%BC%9A%E5%8F%AF%E4%BF%AE%E6%94%B9%EF%BC%8C%E6%9C%89%E5%BA%8F%EF%BC%8C%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8/">python的常用函数</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="列表：可修改，有序，按顺序存储"><a href="#列表：可修改，有序，按顺序存储" class="headerlink" title="列表：可修改，有序，按顺序存储"></a>列表：可修改，有序，按顺序存储</h1><p>lst&#x3D;[1,2,”hello”,3.14]<br>#元组：不可修改，有序，按顺序存储<br>tup&#x3D;(1,2,”hello”,3.14)<br>#字典：可修改，键值对存储<br>dic&#x3D;{“name”:”张三”,”age”:18}</p>
+<h1 id="列表-用-起始索引-结束索引-步长-取列表，左闭右开"><a href="#列表-用-起始索引-结束索引-步长-取列表，左闭右开" class="headerlink" title="列表 用[起始索引:结束索引:步长]取列表，左闭右开"></a>列表 用[起始索引:结束索引:步长]取列表，左闭右开</h1><p>lst&#x3D;[1,2,3,”hello”,3.14]<br>print(lst[-1],”倒数第一个元素”)<br>print(lst[1:3],”从下标1到下标2”)<br>print(lst[:3],”从开头到下标2”)<br>print(lst[2:],”从下标2到末尾”)<br>print(lst[::2],”取下标1开始隔一个取一个”)<br>print(lst[::-1],”倒序列表”)</p>
+<h1 id="列表-插入合并列表"><a href="#列表-插入合并列表" class="headerlink" title="列表 插入合并列表"></a>列表 插入合并列表</h1><p>lst.append(“cherry”)  #在末尾添加单个元素<br>lst.insert(1,”blueberry”) #在下标1插入<br>more_lst&#x3D;[“apple”,”date”]<br>lst.extend(more_lst)  #在后方添加另一个列表</p>
+<h1 id="删除列表"><a href="#删除列表" class="headerlink" title="删除列表"></a>删除列表</h1><p>del lst[4] #删除下标为1的元素<br>lst.remove(“apple”) #删除第一个apple<br>lst.clean() #清空整个列表</p>
+<h1 id="内置方法"><a href="#内置方法" class="headerlink" title="内置方法"></a>内置方法</h1><p>print(lst.sort()) #升序列表<br>print(lst.sort(reverse&#x3D;True))  #降序排序<br>new_lst&#x3D;sorted(lst,reverse&#x3D;True)  #创建新列表降序排序</p>
+<p>#字典的输入输出修改以及常用操作<br>person&#x3D;{}<br>person[“name”]&#x3D;input(“请输入姓名：”)<br>person[“age”]&#x3D;18<br>del dic[“name”]<br>#输出所有key<br>print(“所有key：”,list(dic.keys()))<br>print(“所有value：”,list(dic.values()))<br>print(“你的信息：”,person)</p>
+<p>#enumerate() 一般在for循环中使用，可同时列出下标和数据<br>season&#x3D;[‘Spring’,’Summer’,’Fall’,’Winter’]<br>for idx,value in enumerate(season):<br>    print(idx,value)<br>    # 输出；0，Spring \n1,Summer \n2,Fall \n 3,Winter</p>
+<h1 id="split-将字符串按照指定分隔符分割为列表，后续表示分割次数"><a href="#split-将字符串按照指定分隔符分割为列表，后续表示分割次数" class="headerlink" title="split()将字符串按照指定分隔符分割为列表，后续表示分割次数"></a>split()将字符串按照指定分隔符分割为列表，后续表示分割次数</h1><p>s&#x3D;”苹果，香蕉，橙子，葡萄”<br>result1&#x3D;s.split(“，”)<br>print(result1)<br>resukt2&#x3D;s.split(“，”,2)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fallhsu.github.io/2026/05/15/#%20%E5%88%97%E8%A1%A8%EF%BC%9A%E5%8F%AF%E4%BF%AE%E6%94%B9%EF%BC%8C%E6%9C%89%E5%BA%8F%EF%BC%8C%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8/" data-id="cuidBHw_MWyTjCURl-kzGLgKu" data-title="python的常用函数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Next-js漏洞复现" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2026/01/31/Next-js%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/" class="article-date">
@@ -103,7 +149,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallhsu.github.io/2026/01/31/Next-js%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/" data-id="cuidqie7_HMOG-a1IsZ12C3g-" data-title="Next.js漏洞复现" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://fallhsu.github.io/2026/01/31/Next-js%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/" data-id="cuidqoB0HIQQ05HkXFo1vFcIo" data-title="Next.js漏洞复现" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -147,7 +193,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallhsu.github.io/2026/01/30/%E7%9F%AD%E4%BF%A1%E8%BD%B0%E7%82%B8/" data-id="cuid_jAMzLvyAyNb_K2Kg-Up5" data-title="短信轰炸" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://fallhsu.github.io/2026/01/30/%E7%9F%AD%E4%BF%A1%E8%BD%B0%E7%82%B8/" data-id="cuidA0ZrbVfzsbqTp-CX31o6C" data-title="短信轰炸" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -193,7 +239,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallhsu.github.io/2026/01/29/%E9%87%8D%E6%94%BE%E5%92%8C%E5%B9%B6%E5%8F%91%E5%88%B7%E7%A5%A8/" data-id="cuidi6ffXD0AbrskU8Gub7yHE" data-title="重放和并发刷票" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://fallhsu.github.io/2026/01/29/%E9%87%8D%E6%94%BE%E5%92%8C%E5%B9%B6%E5%8F%91%E5%88%B7%E7%A5%A8/" data-id="cuids-R-3cHKM54KNl9DkMc1_" data-title="重放和并发刷票" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -235,7 +281,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallhsu.github.io/2026/01/26/%E4%BB%A3%E7%A0%81%E6%B3%A8%E5%85%A5%E6%88%96%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" data-id="cuidyco4mW47PFfXpjuIW8sDD" data-title="代码注入或命令执行" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://fallhsu.github.io/2026/01/26/%E4%BB%A3%E7%A0%81%E6%B3%A8%E5%85%A5%E6%88%96%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" data-id="cuidTgXhbrJUYjffJbXuUHcMZ" data-title="代码注入或命令执行" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -275,58 +321,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallhsu.github.io/2026/01/23/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%95%99%E7%A8%8B/" data-id="cuidP2PqhGxKjHlWgIfJNupzR" data-title="blog发布教程" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/01/22/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2026-01-22T11:59:54.158Z" itemprop="datePublished">2026-01-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/01/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fallhsu.github.io/2026/01/22/hello-world/" data-id="cuidAgFfGQgY_Ni6riF-6K0w0" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://fallhsu.github.io/2026/01/23/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%95%99%E7%A8%8B/" data-id="cuidEh1w1ppUXTKKyDjIqML7o" data-title="blog发布教程" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -365,7 +360,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallhsu.github.io/2026/01/22/%E7%AC%AC%E4%B8%80/" data-id="cuidyCyYvkmvhaPRKD0y1c-U2" data-title="To 鲜虾干" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://fallhsu.github.io/2026/01/22/%E7%AC%AC%E4%B8%80/" data-id="cuidBYU7VDD9RG9oGJNHLQV7G" data-title="To 鲜虾干" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -395,7 +390,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/01/">January 2026</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/05/">May 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/01/">January 2026</a></li></ul>
     </div>
   </div>
 
@@ -406,6 +401,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2026/05/15/#%20%E5%88%97%E8%A1%A8%EF%BC%9A%E5%8F%AF%E4%BF%AE%E6%94%B9%EF%BC%8C%E6%9C%89%E5%BA%8F%EF%BC%8C%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8/">python的常用函数</a>
+          </li>
         
           <li>
             <a href="/2026/01/31/Next-js%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/">Next.js漏洞复现</a>
@@ -421,10 +420,6 @@
         
           <li>
             <a href="/2026/01/26/%E4%BB%A3%E7%A0%81%E6%B3%A8%E5%85%A5%E6%88%96%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/">代码注入或命令执行</a>
-          </li>
-        
-          <li>
-            <a href="/2026/01/23/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%95%99%E7%A8%8B/">blog发布教程</a>
           </li>
         
       </ul>
