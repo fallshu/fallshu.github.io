@@ -71,104 +71,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-python复习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/05/19/python%E5%A4%8D%E4%B9%A0/" class="article-date">
-  <time class="dt-published" datetime="2026-05-18T16:00:00.000Z" itemprop="datePublished">2026-05-19</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Blog/">Blog</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/05/19/python%E5%A4%8D%E4%B9%A0/">Python 列表·元组·字典 完整笔记</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="一、三大数据结构基础"><a href="#一、三大数据结构基础" class="headerlink" title="一、三大数据结构基础"></a>一、三大数据结构基础</h1><details>
-<summary>点击查看基础定义</summary>
-
-<h2 id="列表：可修改，有序，按顺序存储"><a href="#列表：可修改，有序，按顺序存储" class="headerlink" title="列表：可修改，有序，按顺序存储"></a>列表：可修改，有序，按顺序存储</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lst = [<span class="number">1</span>, <span class="number">2</span>, <span class="string">&quot;hello&quot;</span>, <span class="number">3.14</span>]</span><br></pre></td></tr></table></figure>
-
-<h2 id="元组：不可修改，有序，按顺序存储"><a href="#元组：不可修改，有序，按顺序存储" class="headerlink" title="元组：不可修改，有序，按顺序存储"></a>元组：不可修改，有序，按顺序存储</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tup = (<span class="number">1</span>, <span class="number">2</span>, <span class="string">&quot;hello&quot;</span>, <span class="number">3.14</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="字典：可修改，键值对存储"><a href="#字典：可修改，键值对存储" class="headerlink" title="字典：可修改，键值对存储"></a>字典：可修改，键值对存储</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dic = &#123;<span class="string">&quot;name&quot;</span>: <span class="string">&quot;张三&quot;</span>, <span class="string">&quot;age&quot;</span>: <span class="number">18</span>&#125;</span><br></pre></td></tr></table></figure>
-</details>
-
-<hr>
-<h1 id="二、列表操作大全"><a href="#二、列表操作大全" class="headerlink" title="二、列表操作大全"></a>二、列表操作大全</h1><details>
-<summary>点击查看列表完整用法</summary>
-
-<h2 id="列表输入"><a href="#列表输入" class="headerlink" title="列表输入"></a>列表输入</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lst = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>(<span class="string">&quot;输入数字，用空格隔开：&quot;</span>).split()))</span><br></pre></td></tr></table></figure>
-
-<h2 id="列表切片-起始-结束-步长-左闭右开"><a href="#列表切片-起始-结束-步长-左闭右开" class="headerlink" title="列表切片 [起始:结束:步长] 左闭右开"></a>列表切片 [起始:结束:步长] 左闭右开</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">lst = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="string">&quot;hello&quot;</span>, <span class="number">3.14</span>]</span><br><span class="line"><span class="built_in">print</span>(lst[-<span class="number">1</span>], <span class="string">&quot;倒数第一个元素&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(lst[<span class="number">1</span>:<span class="number">3</span>], <span class="string">&quot;从下标1到下标2&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(lst[:<span class="number">3</span>], <span class="string">&quot;从开头到下标2&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(lst[<span class="number">2</span>:], <span class="string">&quot;从下标2到末尾&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(lst[::<span class="number">2</span>], <span class="string">&quot;从下标0开始隔一个取一个&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(lst[::-<span class="number">1</span>], <span class="string">&quot;倒序列表&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="列表插入与合并"><a href="#列表插入与合并" class="headerlink" title="列表插入与合并"></a>列表插入与合并</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">lst.append(<span class="string">&quot;cherry&quot;</span>)          <span class="comment"># 在末尾添加单个元素</span></span><br><span class="line">lst.insert(<span class="number">1</span>, <span class="string">&quot;blueberry&quot;</span>)    <span class="comment"># 在下标1插入</span></span><br><span class="line">more_lst = [<span class="string">&quot;apple&quot;</span>, <span class="string">&quot;date&quot;</span>]</span><br><span class="line">lst.extend(more_lst)          <span class="comment"># 在后方添加另一个列表</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="列表删除"><a href="#列表删除" class="headerlink" title="列表删除"></a>列表删除</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">del</span> lst[<span class="number">4</span>]                <span class="comment"># 删除下标为4的元素</span></span><br><span class="line">lst.remove(<span class="string">&quot;apple&quot;</span>)       <span class="comment"># 删除第一个&quot;apple&quot;</span></span><br><span class="line">lst.clear()               <span class="comment"># 清空整个列表</span></span><br><span class="line">a = lst.pop(<span class="number">1</span>)            <span class="comment"># 取出并删除下标1的元素</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="列表排序"><a href="#列表排序" class="headerlink" title="列表排序"></a>列表排序</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">lst.sort()                        <span class="comment"># 升序</span></span><br><span class="line">lst.sort(reverse=<span class="literal">True</span>)            <span class="comment"># 降序</span></span><br><span class="line">new_lst = <span class="built_in">sorted</span>(lst, reverse=<span class="literal">True</span>)  <span class="comment"># 新建列表排序</span></span><br></pre></td></tr></table></figure>
-</details>
-
-<hr>
-<h1 id="三、元组操作"><a href="#三、元组操作" class="headerlink" title="三、元组操作"></a>三、元组操作</h1><details>
-<summary>点击查看元组完整用法</summary>
-
-<h2 id="元组输入"><a href="#元组输入" class="headerlink" title="元组输入"></a>元组输入</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="built_in">input</span>(<span class="string">&quot;输入内容，空格隔开：&quot;</span>)</span><br><span class="line">tup = <span class="built_in">tuple</span>(s.split())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;元组&quot;</span>, tup)</span><br></pre></td></tr></table></figure>
-
-<h2 id="元组转列表"><a href="#元组转列表" class="headerlink" title="元组转列表"></a>元组转列表</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">t = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">lst = <span class="built_in">list</span>(t)</span><br><span class="line">lst.append(<span class="number">4</span>)</span><br></pre></td></tr></table></figure>
-</details>
-
-<hr>
-<h1 id="四、字典操作"><a href="#四、字典操作" class="headerlink" title="四、字典操作"></a>四、字典操作</h1><details>
-<summary>点击查看字典完整用法</summary>
-
-<h2 id="方法一：循环输入键值对"><a href="#方法一：循环输入键值对" class="headerlink" title="方法一：循环输入键值对"></a>方法一：循环输入键值对</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">d = &#123;&#125;</span><br><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;输入字典元素个数：&quot;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">    k = <span class="built_in">input</span>(<span class="string">&quot;输入键：&quot;</span>)</span><br><span class="line">    v = <span class="built_in">input</span>(<span class="string">&quot;输入值：&quot;</span>)</span><br><span class="line">    d[k] = v</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;字典：&quot;</span>, d)</span><br></pre></td></tr></table></figure>
-
-<h2 id="方法二：一行输入键值对"><a href="#方法二：一行输入键值对" class="headerlink" title="方法二：一行输入键值对"></a>方法二：一行输入键值对</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">data = <span class="built_in">input</span>(<span class="string">&quot;输入：键：值 空格分隔： &quot;</span>)</span><br><span class="line">dic = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> data.split():</span><br><span class="line">    key, val = item.split(<span class="string">&quot;:&quot;</span>)</span><br><span class="line">    dic[key] = val</span><br></pre></td></tr></table></figure>
-
-<h2 id="字典增删改查"><a href="#字典增删改查" class="headerlink" title="字典增删改查"></a>字典增删改查</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">person = &#123;&#125;</span><br><span class="line">person[<span class="string">&quot;name&quot;</span>] = <span class="built_in">input</span>(<span class="string">&quot;请输入姓名：&quot;</span>)</span><br><span class="line">person[<span class="string">&quot;age&quot;</span>] = <span class="number">18</span></span><br><span class="line"><span class="keyword">del</span> person[<span class="string">&quot;name&quot;</span>]  <span class="comment"># 删除键</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;所有key：&quot;</span>, <span class="built_in">list</span>(person.keys()))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;所有value：&quot;</span>, <span class="built_in">list</span>(person.values()))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的信息：&quot;</span>, person)</span><br></pre></td></tr></table></figure>
-</details>
-
-<hr>
-<h1 id="五、常用函数"><a href="#五、常用函数" class="headerlink" title="五、常用函数"></a>五、常用函数</h1><details>
-<summary>点击查看 enumerate & split</summary>
-
-<h2 id="enumerate-同时获取下标和数据"><a href="#enumerate-同时获取下标和数据" class="headerlink" title="enumerate() 同时获取下标和数据"></a>enumerate() 同时获取下标和数据</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">season = [<span class="string">&#x27;Spring&#x27;</span>, <span class="string">&#x27;Summer&#x27;</span>, <span class="string">&#x27;Fall&#x27;</span>, <span class="string">&#x27;Winter&#x27;</span>]</span><br><span class="line"><span class="keyword">for</span> idx, value <span class="keyword">in</span> <span class="built_in">enumerate</span>(season):</span><br><span class="line">    <span class="built_in">print</span>(idx, value)</span><br></pre></td></tr></table></figure>
-
-<h2 id="split-字符串分割"><a href="#split-字符串分割" class="headerlink" title="split() 字符串分割"></a>split() 字符串分割</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">&quot;苹果，香蕉，橙子，葡萄&quot;</span></span><br><span class="line">result1 = s.split(<span class="string">&quot;，&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(result1)</span><br><span class="line">result2 = s.split(<span class="string">&quot;，&quot;</span>, <span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(result2)</span><br></pre></td></tr></table></figure>
-</details>
-```
-
-<hr>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/05/19/python%E5%A4%8D%E4%B9%A0/" data-id="cuid82SaGkAVOd0475CeOG-RE" data-title="Python 列表·元组·字典 完整笔记" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2026/05/18/python/" class="article-date">
@@ -469,13 +371,6 @@
           <aside id="sidebar">
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a></li></ul>
-    </div>
-  </div>
-
 
   
     
@@ -500,10 +395,6 @@
       <ul>
         
           <li>
-            <a href="/2026/05/19/python%E5%A4%8D%E4%B9%A0/">Python 列表·元组·字典 完整笔记</a>
-          </li>
-        
-          <li>
             <a href="/2026/05/18/python/">python复习</a>
           </li>
         
@@ -517,6 +408,10 @@
         
           <li>
             <a href="/2026/01/29/%E9%87%8D%E6%94%BE%E5%92%8C%E5%B9%B6%E5%8F%91%E5%88%B7%E7%A5%A8/">重放和并发刷票</a>
+          </li>
+        
+          <li>
+            <a href="/2026/01/26/%E4%BB%A3%E7%A0%81%E6%B3%A8%E5%85%A5%E6%88%96%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/">代码注入或命令执行</a>
           </li>
         
       </ul>
