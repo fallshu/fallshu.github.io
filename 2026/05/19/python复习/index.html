@@ -4,13 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Harvey</title>
+  <title>Python 列表·元组·字典 完整笔记 | Harvey</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Harvey">
-<meta property="og:url" content="http://fallshu.github.io/index.html">
+  <meta name="description" content="一、三大数据结构基础 点击查看基础定义  列表：可修改，有序，按顺序存储1lst &#x3D; [1, 2, &quot;hello&quot;, 3.14]  元组：不可修改，有序，按顺序存储1tup &#x3D; (1, 2, &quot;hello&quot;, 3.14)  字典：可修改，键值对存储1dic &#x3D; &#123;&quot;name&quot;: &quot;张三&quot;, &quot;age">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python 列表·元组·字典 完整笔记">
+<meta property="og:url" content="http://fallshu.github.io/2026/05/19/python%E5%A4%8D%E4%B9%A0/index.html">
 <meta property="og:site_name" content="Harvey">
+<meta property="og:description" content="一、三大数据结构基础 点击查看基础定义  列表：可修改，有序，按顺序存储1lst &#x3D; [1, 2, &quot;hello&quot;, 3.14]  元组：不可修改，有序，按顺序存储1tup &#x3D; (1, 2, &quot;hello&quot;, 3.14)  字典：可修改，键值对存储1dic &#x3D; &#123;&quot;name&quot;: &quot;张三&quot;, &quot;age">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-05-18T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-05-19T03:46:12.741Z">
 <meta property="article:author" content="Harvey">
 <meta name="twitter:card" content="summary">
   
@@ -69,9 +73,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-python复习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-python复习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2026/05/19/python%E5%A4%8D%E4%B9%A0/" class="article-date">
   <time class="dt-published" datetime="2026-05-18T16:00:00.000Z" itemprop="datePublished">2026-05-19</time>
@@ -88,8 +90,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/05/19/python%E5%A4%8D%E4%B9%A0/">Python 列表·元组·字典 完整笔记</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      Python 列表·元组·字典 完整笔记
     </h1>
   
 
@@ -164,266 +166,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Next-js漏洞复现" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/01/31/Next-js%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/" class="article-date">
-  <time class="dt-published" datetime="2026-01-31T13:24:23.000Z" itemprop="datePublished">2026-01-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/01/31/Next-js%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/">Next.js漏洞复现</a>
-    </h1>
+    <a href="/2026/01/31/Next-js%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Next.js漏洞复现</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="开启bp抓取数据包"><a href="#开启bp抓取数据包" class="headerlink" title="开启bp抓取数据包"></a>开启bp抓取数据包</h1><p><img src="/images/2026-01-31.11.png"></p>
-<h1 id="将数据包发送给重放器"><a href="#将数据包发送给重放器" class="headerlink" title="将数据包发送给重放器"></a>将数据包发送给重放器</h1><p><img src="/images/2026-01-31.12.png"></p>
-<h1 id="更改GET为POST"><a href="#更改GET为POST" class="headerlink" title="更改GET为POST"></a>更改GET为POST</h1><p><img src="/images/2026-01-31.13.png"></p>
-<h1 id="将Host后续部分删除"><a href="#将Host后续部分删除" class="headerlink" title="将Host后续部分删除"></a>将Host后续部分删除</h1><p><img src="/images/2026-01-31.14.png"></p>
-<h1 id="添加攻击代码"><a href="#添加攻击代码" class="headerlink" title="添加攻击代码"></a>添加攻击代码</h1><p><img src="/images/2026-01-31.15.png"></p>
-<h1 id="发送数据包，即可实现远程控制"><a href="#发送数据包，即可实现远程控制" class="headerlink" title="发送数据包，即可实现远程控制"></a>发送数据包，即可实现远程控制</h1><p><img src="/images/2026-01-31.16.png"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/31/Next-js%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/" data-id="cuidFn-RNfbQDT6WbBxy0LUC0" data-title="Next.js漏洞复现" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-短信轰炸" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/01/30/%E7%9F%AD%E4%BF%A1%E8%BD%B0%E7%82%B8/" class="article-date">
-  <time class="dt-published" datetime="2026-01-30T12:43:35.000Z" itemprop="datePublished">2026-01-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/01/30/%E7%9F%AD%E4%BF%A1%E8%BD%B0%E7%82%B8/">短信轰炸</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="1、时区绕过"><a href="#1、时区绕过" class="headerlink" title="1、时区绕过"></a>1、时区绕过</h2><h2 id="2、改IP地址（添加payload）"><a href="#2、改IP地址（添加payload）" class="headerlink" title="2、改IP地址（添加payload）"></a>2、改IP地址（添加payload）</h2><h2 id="3、双重手机号"><a href="#3、双重手机号" class="headerlink" title="3、双重手机号"></a>3、双重手机号</h2><h2 id="4、空格绕过（前面加空格，后面加空格，tab键）"><a href="#4、空格绕过（前面加空格，后面加空格，tab键）" class="headerlink" title="4、空格绕过（前面加空格，后面加空格，tab键）"></a>4、空格绕过（前面加空格，后面加空格，tab键）</h2><h2 id="5、特殊字符绕过"><a href="#5、特殊字符绕过" class="headerlink" title="5、特殊字符绕过"></a>5、特殊字符绕过</h2><h1 id="打开靶场，输入手机号，抓取发送验证码数据包"><a href="#打开靶场，输入手机号，抓取发送验证码数据包" class="headerlink" title="打开靶场，输入手机号，抓取发送验证码数据包"></a>打开靶场，输入手机号，抓取发送验证码数据包</h1><h1 id="将数据放入重放器"><a href="#将数据放入重放器" class="headerlink" title="将数据放入重放器"></a>将数据放入重放器</h1><p><img src="/images/2026-01-31.2.png"></p>
-<h1 id="重放数据包，显示只能重放三次"><a href="#重放数据包，显示只能重放三次" class="headerlink" title="重放数据包，显示只能重放三次"></a>重放数据包，显示只能重放三次</h1><p><img src="/images/2026-01-31.3.png"></p>
-<h2 id="一、代理IP绕过"><a href="#一、代理IP绕过" class="headerlink" title="一、代理IP绕过"></a>一、代理IP绕过</h2><h3 id="在数据包中添加-X-Forwarded-For-IP地址"><a href="#在数据包中添加-X-Forwarded-For-IP地址" class="headerlink" title="在数据包中添加 X-Forwarded-For:IP地址"></a>在数据包中添加 X-Forwarded-For:IP地址</h3><p><img src="/images/2026-01-31.4.png"></p>
-<h3 id="成功绕过"><a href="#成功绕过" class="headerlink" title="成功绕过"></a>成功绕过</h3><h2 id="二、双写绕过"><a href="#二、双写绕过" class="headerlink" title="二、双写绕过"></a>二、双写绕过</h2><h3 id="在手机号后面再加上一个手机号"><a href="#在手机号后面再加上一个手机号" class="headerlink" title="在手机号后面再加上一个手机号"></a>在手机号后面再加上一个手机号</h3><p><img src="/images/2026-01-31.5.png"></p>
-<h3 id="成功绕过-1"><a href="#成功绕过-1" class="headerlink" title="成功绕过"></a>成功绕过</h3><h2 id="三、安装插件轰炸"><a href="#三、安装插件轰炸" class="headerlink" title="三、安装插件轰炸"></a>三、安装插件轰炸</h2><p><img src="/images/2026-01-31.6.png"></p>
-<h3 id="成功轰炸"><a href="#成功轰炸" class="headerlink" title="成功轰炸"></a>成功轰炸</h3><p><img src="/images/2026-01-31.7.png"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/30/%E7%9F%AD%E4%BF%A1%E8%BD%B0%E7%82%B8/" data-id="cuidJlLqYqDzl_arglTVq1hPy" data-title="短信轰炸" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-重放和并发刷票" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/01/29/%E9%87%8D%E6%94%BE%E5%92%8C%E5%B9%B6%E5%8F%91%E5%88%B7%E7%A5%A8/" class="article-date">
-  <time class="dt-published" datetime="2026-01-28T16:00:00.000Z" itemprop="datePublished">2026-01-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/01/29/%E9%87%8D%E6%94%BE%E5%92%8C%E5%B9%B6%E5%8F%91%E5%88%B7%E7%A5%A8/">重放和并发刷票</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="重放刷票"><a href="#重放刷票" class="headerlink" title="重放刷票"></a>重放刷票</h1><p><img src="/images/2026-01-29.1.png"></p>
-<h2 id="创建靶场-登录-打开bp开启拦截-选择2号投票"><a href="#创建靶场-登录-打开bp开启拦截-选择2号投票" class="headerlink" title="创建靶场 登录 打开bp开启拦截 选择2号投票"></a>创建靶场 登录 打开bp开启拦截 选择2号投票</h2><p><img src="/images/2026-01-29.2.png"></p>
-<h2 id="在Proxy中选择Reepeater"><a href="#在Proxy中选择Reepeater" class="headerlink" title="在Proxy中选择Reepeater"></a>在Proxy中选择Reepeater</h2><p><img src="/images/2026-01-29.3.png"></p>
-<h2 id="重复点击Send即可实现刷票"><a href="#重复点击Send即可实现刷票" class="headerlink" title="重复点击Send即可实现刷票"></a>重复点击Send即可实现刷票</h2><p><img src="/images/2026-01-29.4.png"><br><img src="/images/2026-01-29.5.png"></p>
-<h1 id="并发刷票"><a href="#并发刷票" class="headerlink" title="并发刷票"></a>并发刷票</h1><p><img src="/images/2026-01-30.1.png"></p>
-<h2 id="打开拦截，选择号数投票"><a href="#打开拦截，选择号数投票" class="headerlink" title="打开拦截，选择号数投票"></a>打开拦截，选择号数投票</h2><h2 id="右键选择插件"><a href="#右键选择插件" class="headerlink" title="右键选择插件"></a>右键选择插件</h2><p><img src="/images/2026-01-30.2.png"></p>
-<h2 id="脚本选择：race-py"><a href="#脚本选择：race-py" class="headerlink" title="脚本选择：race.py"></a>脚本选择：race.py</h2><h2 id="增加请求头：req-s"><a href="#增加请求头：req-s" class="headerlink" title="增加请求头：req: %s"></a>增加请求头：req: %s</h2><p><img src="/images/2026-01-30.3.png"></p>
-<h2 id="攻击-最后并发刷票完成"><a href="#攻击-最后并发刷票完成" class="headerlink" title="攻击 最后并发刷票完成"></a>攻击 最后并发刷票完成</h2><p><img src="/images/2026-01-30.4.png"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/29/%E9%87%8D%E6%94%BE%E5%92%8C%E5%B9%B6%E5%8F%91%E5%88%B7%E7%A5%A8/" data-id="cuidQb5UV1YCh8-MvdBWpgb-w" data-title="重放和并发刷票" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-代码注入或命令执行" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/01/26/%E4%BB%A3%E7%A0%81%E6%B3%A8%E5%85%A5%E6%88%96%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" class="article-date">
-  <time class="dt-published" datetime="2026-01-25T16:00:00.000Z" itemprop="datePublished">2026-01-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/01/26/%E4%BB%A3%E7%A0%81%E6%B3%A8%E5%85%A5%E6%88%96%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/">代码注入或命令执行</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="复制网址，在burp中打开"><a href="#复制网址，在burp中打开" class="headerlink" title="复制网址，在burp中打开"></a>复制网址，在burp中打开</h1><p><img src="/images/2026-01-26.1.png"></p>
-<h1 id="改-GET为POST"><a href="#改-GET为POST" class="headerlink" title="改 GET为POST"></a>改 GET为POST</h1><p>添加请求头 Content-Type: application&#x2F;x-www-form-urlencoded<br>添加请求体 a&#x3D;echo file_get_contents(‘&#x2F;flag’);<br><img src="/images/2026-01-26.2.png"></p>
-<h1 id="将改好的代码放回"><a href="#将改好的代码放回" class="headerlink" title="将改好的代码放回"></a>将改好的代码放回</h1><p><img src="/images/2026-01-26.3.png"></p>
-<h1 id="Forward-可在开头得flag"><a href="#Forward-可在开头得flag" class="headerlink" title="Forward 可在开头得flag"></a>Forward 可在开头得flag</h1><p><img src="/images/2026-01-26.4.png"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/26/%E4%BB%A3%E7%A0%81%E6%B3%A8%E5%85%A5%E6%88%96%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" data-id="cuidLCdA4-9zoZ6EtaIp-wupV" data-title="代码注入或命令执行" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-博客发布教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/01/23/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%95%99%E7%A8%8B/" class="article-date">
-  <time class="dt-published" datetime="2026-01-22T16:00:00.000Z" itemprop="datePublished">2026-01-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/01/23/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%95%99%E7%A8%8B/">blog发布教程</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="创建文本文件，后缀名改为-md"><a href="#创建文本文件，后缀名改为-md" class="headerlink" title="创建文本文件，后缀名改为.md"></a>创建文本文件，后缀名改为.md</h1><h1 id="vscode"><a href="#vscode" class="headerlink" title="vscode"></a>vscode</h1><p><img src="/images/2026-1-23.1.png"><br><img src="/images/2026-1-23.2.png"></p>
-<h1 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h1><p>post 打开方式：Git Bash<br>hexo clean<br>hexo g<br>hexo d<br><img src="/images/2026-1-23.3.png"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/23/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%95%99%E7%A8%8B/" data-id="cuidaAp-VU9dDcQ4fIhF3i9bS" data-title="blog发布教程" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-第一" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/01/22/%E7%AC%AC%E4%B8%80/" class="article-date">
-  <time class="dt-published" datetime="2026-01-21T16:00:00.000Z" itemprop="datePublished">2026-01-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/01/22/%E7%AC%AC%E4%B8%80/">To 鲜虾干</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><img src="/images/2026-01-22.png"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/22/%E7%AC%AC%E4%B8%80/" data-id="cuidfwnvEH_9h8lrQ03lvbFZr" data-title="To 鲜虾干" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
