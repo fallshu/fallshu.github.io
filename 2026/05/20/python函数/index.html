@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>To 鲜虾干 | Harvey</title>
+  <title>Python函数的使用 | Harvey</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="To 鲜虾干">
-<meta property="og:url" content="http://fallshu.github.io/2026/01/22/%E7%AC%AC%E4%B8%80/index.html">
+  <meta name="description" content="函数的使用 列表函数  列表‘’’python.append() #后续增加元素.remove() #移除首次出现的元素.extend() #后续增加列表.insert() #添加至指定位置del lst[] #删除指定位置元素.pop() #取出并删除.index() #获取指定元素首次出现的下标.count() #统计指定元素在列表中出现的次数a in lst #判断值是否存在列表中z&amp;#x3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python函数的使用">
+<meta property="og:url" content="http://fallshu.github.io/2026/05/20/python%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="Harvey">
+<meta property="og:description" content="函数的使用 列表函数  列表‘’’python.append() #后续增加元素.remove() #移除首次出现的元素.extend() #后续增加列表.insert() #添加至指定位置del lst[] #删除指定位置元素.pop() #取出并删除.index() #获取指定元素首次出现的下标.count() #统计指定元素在列表中出现的次数a in lst #判断值是否存在列表中z&amp;#x3">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://fallshu.github.io/images/2026-01-22.png">
-<meta property="article:published_time" content="2026-01-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-01-22T12:25:38.085Z">
+<meta property="article:published_time" content="2026-05-19T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-05-19T16:12:38.259Z">
 <meta property="article:author" content="Harvey">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://fallshu.github.io/images/2026-01-22.png">
   
     <link rel="alternate" href="/atom.xml" title="Harvey" type="application/atom+xml">
   
@@ -73,12 +73,16 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-第一" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-python函数" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2026/01/22/%E7%AC%AC%E4%B8%80/" class="article-date">
-  <time class="dt-published" datetime="2026-01-21T16:00:00.000Z" itemprop="datePublished">2026-01-22</time>
+    <a href="/2026/05/20/python%E5%87%BD%E6%95%B0/" class="article-date">
+  <time class="dt-published" datetime="2026-05-19T16:00:00.000Z" itemprop="datePublished">2026-05-20</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/python/">python</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -87,7 +91,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      To 鲜虾干
+      Python函数的使用
     </h1>
   
 
@@ -95,12 +99,35 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><img src="/images/2026-01-22.png"></p>
+        <h1 id="函数的使用"><a href="#函数的使用" class="headerlink" title="函数的使用"></a>函数的使用</h1><details>
+<summary>列表函数</summary>
+
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>‘’’python<br>.append() #后续增加元素<br>.remove() #移除首次出现的元素<br>.extend() #后续增加列表<br>.insert() #添加至指定位置<br>del lst[] #删除指定位置元素<br>.pop() #取出并删除<br>.index() #获取指定元素首次出现的下标<br>.count() #统计指定元素在列表中出现的次数<br>a in lst #判断值是否存在列表中<br>z&#x3D;zip(alst,blst) #将两个列表合并为元组列表<br>.sort() #默认升序排序<br>.sort(reverse&#x3D;True) #降序排序<br>sorted(alst) #返回新列表<br>sorted(alst,reverse&#x3D;True) #降序排序<br>lst.reverse() #原地逆序排序，等同于alst&#x3D;lst[::-1]<br>‘’’</p>
+<h2 id="列表切片为浅复制，修改时会影响另外一个"><a href="#列表切片为浅复制，修改时会影响另外一个" class="headerlink" title="列表切片为浅复制，修改时会影响另外一个"></a>列表切片为浅复制，修改时会影响另外一个</h2><h2 id="深复制可用"><a href="#深复制可用" class="headerlink" title="深复制可用"></a>深复制可用</h2><h2 id="‘’’-python-deepcopy-alst-‘’’"><a href="#‘’’-python-deepcopy-alst-‘’’" class="headerlink" title="‘’’ python.deepcopy(alst)‘’’"></a>‘’’ python<br>.deepcopy(alst)<br>‘’’</h2><h2 id="enumerate的使用"><a href="#enumerate的使用" class="headerlink" title="enumerate的使用"></a>enumerate的使用</h2><details>
+<summary>列表，字典</summary>
+
+<h3 id="列表-1"><a href="#列表-1" class="headerlink" title="列表"></a>列表</h3><p>‘’’python<br>for item in enumerate(‘a,b,c,d’):<br>    print(item)</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>(0,’a)(1,’b)(2,’c)…<br>‘’’</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h3 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h3><p>‘’’python<br>for idx,key in enumerate(dic):<br>    ##idx&#x3D;序号；key&#x3D;字典的键<br>    value&#x3D;dic[key] #拿到值<br>print(idx,key,value)</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>0 name 小明  1 age 18  2 score 95</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/22/%E7%AC%AC%E4%B8%80/" data-id="cuidhBeah2KGbqAvQUkIV6Qbw" data-title="To 鲜虾干" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/05/20/python%E5%87%BD%E6%95%B0/" data-id="cuidcS0fSwlOjG6kQjwe8D2wG" data-title="Python函数的使用" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -110,15 +137,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2026/01/23/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%95%99%E7%A8%8B/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">前一篇</strong>
-      <div class="article-nav-title">
-        
-          blog发布教程
-        
-      </div>
-    </a>
   
+    <a href="/2026/05/19/python%E5%A4%8D%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Python 列表·元组·字典 完整笔记</div>
+    </a>
   
 </nav>
 
