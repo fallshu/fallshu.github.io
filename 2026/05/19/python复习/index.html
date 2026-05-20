@@ -14,7 +14,7 @@
 <meta property="og:description" content="一、三大数据结构基础 点击查看基础定义  列表：可修改，有序，按顺序存储1lst &#x3D; [1, 2, &quot;hello&quot;, 3.14]  元组：不可修改，有序，按顺序存储1tup &#x3D; (1, 2, &quot;hello&quot;, 3.14)  字典：可修改，键值对存储1dic &#x3D; &#123;&quot;name&quot;: &quot;张三&quot;, &quot;age">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-05-18T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-05-19T03:46:12.741Z">
+<meta property="article:modified_time" content="2026-05-20T15:17:43.757Z">
 <meta property="article:author" content="Harvey">
 <meta name="twitter:card" content="summary">
   
@@ -80,7 +80,7 @@
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Blog/">Blog</a>
+    <a class="article-category-link" href="/categories/python/">python</a>
   </div>
 
   </div>
@@ -140,6 +140,7 @@
 <h2 id="方法一：循环输入键值对"><a href="#方法一：循环输入键值对" class="headerlink" title="方法一：循环输入键值对"></a>方法一：循环输入键值对</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">d = &#123;&#125;</span><br><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;输入字典元素个数：&quot;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">    k = <span class="built_in">input</span>(<span class="string">&quot;输入键：&quot;</span>)</span><br><span class="line">    v = <span class="built_in">input</span>(<span class="string">&quot;输入值：&quot;</span>)</span><br><span class="line">    d[k] = v</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;字典：&quot;</span>, d)</span><br></pre></td></tr></table></figure>
 
 <h2 id="方法二：一行输入键值对"><a href="#方法二：一行输入键值对" class="headerlink" title="方法二：一行输入键值对"></a>方法二：一行输入键值对</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">data = <span class="built_in">input</span>(<span class="string">&quot;输入：键：值 空格分隔： &quot;</span>)</span><br><span class="line">dic = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> data.split():</span><br><span class="line">    key, val = item.split(<span class="string">&quot;:&quot;</span>)</span><br><span class="line">    dic[key] = val</span><br></pre></td></tr></table></figure>
+<h2 id="方法三：利用已有数据创建字典"><a href="#方法三：利用已有数据创建字典" class="headerlink" title="方法三：利用已有数据创建字典"></a>方法三：利用已有数据创建字典</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">keys=[<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>,<span class="string">&#x27;d&#x27;</span>]</span><br><span class="line">values=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">dic=<span class="built_in">dict</span>(<span class="built_in">zip</span>(keys,values))</span><br><span class="line"><span class="built_in">print</span>(dic)</span><br></pre></td></tr></table></figure>
 
 <h2 id="字典增删改查"><a href="#字典增删改查" class="headerlink" title="字典增删改查"></a>字典增删改查</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">person = &#123;&#125;</span><br><span class="line">person[<span class="string">&quot;name&quot;</span>] = <span class="built_in">input</span>(<span class="string">&quot;请输入姓名：&quot;</span>)</span><br><span class="line">person[<span class="string">&quot;age&quot;</span>] = <span class="number">18</span></span><br><span class="line"><span class="keyword">del</span> person[<span class="string">&quot;name&quot;</span>]  <span class="comment"># 删除键</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;所有key：&quot;</span>, <span class="built_in">list</span>(person.keys()))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;所有value：&quot;</span>, <span class="built_in">list</span>(person.values()))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的信息：&quot;</span>, person)</span><br></pre></td></tr></table></figure>
 </details>
@@ -159,7 +160,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/05/19/python%E5%A4%8D%E4%B9%A0/" data-id="cuidgQzdkfrz0IJ-89bUFgO_C" data-title="Python 列表·元组·字典 完整笔记" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/05/19/python%E5%A4%8D%E4%B9%A0/" data-id="cuidLREUlFMlZV9ghq5rTUaLA" data-title="Python 列表·元组·字典 完整笔记" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -198,7 +199,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a></li></ul>
     </div>
   </div>
 
