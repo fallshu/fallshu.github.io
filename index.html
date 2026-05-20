@@ -190,7 +190,7 @@
 <h3 id="re-comlile-pattern-flags"><a href="#re-comlile-pattern-flags" class="headerlink" title="re.comlile(pattern[,flags])"></a>re.comlile(pattern[,flags])</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">pattern=re.<span class="built_in">compile</span>(<span class="string">r&quot;^http&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(pattern.<span class="keyword">match</span>(<span class="string">&quot;http://baidu.com&quot;</span>))</span><br><span class="line">&gt;&gt;&gt;匹配成功</span><br><span class="line"><span class="comment">#把正则表达式变成一个对象</span></span><br></pre></td></tr></table></figure>
 <h3 id="re-findall-pattern-string-flags"><a href="#re-findall-pattern-string-flags" class="headerlink" title="re.findall(pattern,string[,flags])"></a>re.findall(pattern,string[,flags])</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">re.findall(<span class="string">r&quot;\d+&quot;</span>,<span class="string">&quot;订单号：12345,金额：67.89&quot;</span>)</span><br><span class="line">&gt;&gt;&gt;[<span class="string">&#x27;12345&#x27;</span>,<span class="string">&#x27;67&#x27;</span>,<span class="string">&#x27;89&#x27;</span>]</span><br><span class="line"><span class="comment">#从字符串中提取所有匹配的内容</span></span><br></pre></td></tr></table></figure>
 <h3 id="re-match-pattern-string-flags"><a href="#re-match-pattern-string-flags" class="headerlink" title="re.match(pattern,string[,flags])"></a>re.match(pattern,string[,flags])</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="built_in">print</span>(re.<span class="keyword">match</span>(<span class="string">r&quot;^http&quot;</span>,<span class="string">&quot;http://baidu.com))</span></span><br><span class="line"><span class="string">&gt;&gt;&gt;匹配</span></span><br><span class="line"><span class="string">print(re.match(r&quot;</span>^http<span class="string">&quot;,&quot;</span>aaahttp://baidu.com))</span><br><span class="line">&gt;&gt;&gt;<span class="literal">None</span></span><br><span class="line"><span class="comment">#只匹配开头，通常用于是否为（）开头</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<details>
+<h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h3><details>
 <summary>举例</summary>
 
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">result=re.<span class="keyword">match</span>(<span class="string">r&quot;^http&quot;</span>,<span class="string">&quot;http://baidu.com&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(result.group()) <span class="comment">#获取匹配到的内容</span></span><br><span class="line">&gt;&gt;&gt;http</span><br><span class="line"><span class="built_in">print</span>(result.start()) <span class="comment">#获取起始索引</span></span><br><span class="line">&gt;&gt;&gt;<span class="number">0</span></span><br><span class="line"><span class="built_in">print</span>(result.end()) <span class="comment">#获取结束索引</span></span><br><span class="line">&gt;&gt;&gt;<span class="number">4</span></span><br><span class="line"><span class="built_in">print</span>(result.span()) <span class="comment">#获取起止索引元组</span></span><br><span class="line">&gt;&gt;&gt;(<span class="number">0</span>,<span class="number">4</span>)</span><br></pre></td></tr></table></figure>
@@ -209,7 +209,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/05/20/python%E5%87%BD%E6%95%B0/" data-id="cuidonZhSYcivEELdTuz10ywZ" data-title="Python函数的使用" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/05/20/python%E5%87%BD%E6%95%B0/" data-id="cuidqEwEIhIF40H8ONecRJR1Q" data-title="Python函数的使用" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -307,7 +307,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/05/19/python%E5%A4%8D%E4%B9%A0/" data-id="cuidio9YCm3GQxeVMUagIMBQc" data-title="Python 列表·元组·字典 完整笔记" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/05/19/python%E5%A4%8D%E4%B9%A0/" data-id="cuidgQzdkfrz0IJ-89bUFgO_C" data-title="Python 列表·元组·字典 完整笔记" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -351,7 +351,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/31/Next-js%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/" data-id="cuid0W2b9SVyiycjWmeOVNbR2" data-title="Next.js漏洞复现" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/01/31/Next-js%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/" data-id="cuid-8HgrbZ7iweWsORagzzXB" data-title="Next.js漏洞复现" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -395,7 +395,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/30/%E7%9F%AD%E4%BF%A1%E8%BD%B0%E7%82%B8/" data-id="cuidkMUXzBhNT2U5jNlujCFpl" data-title="短信轰炸" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/01/30/%E7%9F%AD%E4%BF%A1%E8%BD%B0%E7%82%B8/" data-id="cuidXwU8DQqDwgfXiHkw0QkRP" data-title="短信轰炸" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -441,7 +441,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/29/%E9%87%8D%E6%94%BE%E5%92%8C%E5%B9%B6%E5%8F%91%E5%88%B7%E7%A5%A8/" data-id="cuidRMJ7RH-6NZbrCKGjjPkN2" data-title="重放和并发刷票" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/01/29/%E9%87%8D%E6%94%BE%E5%92%8C%E5%B9%B6%E5%8F%91%E5%88%B7%E7%A5%A8/" data-id="cuid-C5wQ8PL4virCqdueY1e0" data-title="重放和并发刷票" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -483,7 +483,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/26/%E4%BB%A3%E7%A0%81%E6%B3%A8%E5%85%A5%E6%88%96%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" data-id="cuidtYxfQvagRBGoRIHtDdF6P" data-title="代码注入或命令执行" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/01/26/%E4%BB%A3%E7%A0%81%E6%B3%A8%E5%85%A5%E6%88%96%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" data-id="cuid-OOSvhg670BH7T57b865g" data-title="代码注入或命令执行" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -523,7 +523,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/23/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%95%99%E7%A8%8B/" data-id="cuidWEChBPR6m2iTe2hUlBR0e" data-title="blog发布教程" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/01/23/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%95%99%E7%A8%8B/" data-id="cuidNVTwUC6-IedJLejivcHOH" data-title="blog发布教程" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -562,7 +562,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/22/%E7%AC%AC%E4%B8%80/" data-id="cuidb2j5zA4ejyNqY2aHlgp5Z" data-title="To 鲜虾干" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/01/22/%E7%AC%AC%E4%B8%80/" data-id="cuid8penJL_yfC6rAtNcJlXII" data-title="To 鲜虾干" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
