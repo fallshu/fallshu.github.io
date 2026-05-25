@@ -97,7 +97,16 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="函数的使用"><a href="#函数的使用" class="headerlink" title="函数的使用"></a>函数的使用</h1><h2 id="第一章-python可迭代对象"><a href="#第一章-python可迭代对象" class="headerlink" title="第一章 python可迭代对象"></a>第一章 python可迭代对象</h2><details>
+        <h1 id="函数的使用"><a href="#函数的使用" class="headerlink" title="函数的使用"></a>函数的使用</h1><h2 id="常见函数"><a href="#常见函数" class="headerlink" title="常见函数"></a>常见函数</h2><details>
+<summary>常见函数</summary>
+
+<h3 id="随机"><a href="#随机" class="headerlink" title="随机"></a>随机</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line">x_max,x_min=<span class="number">100</span>,<span class="number">10</span></span><br><span class="line">x=random.uniform(x_min,x_max) <span class="comment">#生成随机小数</span></span><br><span class="line">x=random.random() <span class="comment">#生成0-1内随机小数</span></span><br><span class="line">x=random.randint(x_min,x_max) <span class="comment">#生成随机整数</span></span><br><span class="line">x=random.choices(序列,k=<span class="number">8</span>) <span class="comment">#随机在序列中选择8个元素组成字符串</span></span><br><span class="line">x=random.choice(序列) <span class="comment">#在序列中随机选择一个元素</span></span><br></pre></td></tr></table></figure>
+<h3 id="python字符判断"><a href="#python字符判断" class="headerlink" title="python字符判断"></a>python字符判断</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a.isalpha() <span class="comment">#判断是否由字母组成</span></span><br><span class="line">a.isdigit() <span class="comment">#判断是否由数字组成</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">abs</span>(数值) <span class="comment">#求绝对值</span></span><br><span class="line"><span class="built_in">ord</span>(<span class="string">&#x27;单个字符&#x27;</span>) <span class="comment">#将单个字符转化为ASCII编码数字</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> string</span><br><span class="line"><span class="built_in">print</span>(string.ascii_letters) <span class="comment">#输出所有大小写英文字母</span></span><br><span class="line"><span class="built_in">print</span>(string.ascii_lowercase) <span class="comment">#输出所有小写英文字母</span></span><br><span class="line"><span class="built_in">print</span>(string.ascii_uppercase) <span class="comment">#输出所有大写英文字母</span></span><br></pre></td></tr></table></figure>
+</details>
+
+<h2 id="第一章-python可迭代对象"><a href="#第一章-python可迭代对象" class="headerlink" title="第一章 python可迭代对象"></a>第一章 python可迭代对象</h2><details>
 <summary>第一章 python可迭代对象</summary>
 
 <h2 id="列表函数"><a href="#列表函数" class="headerlink" title="列表函数"></a>列表函数</h2><details open>
@@ -271,10 +280,22 @@
 
 </details>
 
+<h2 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h2><details>
+<summary>二维数组</summary>
+
+<h3 id="创建-1"><a href="#创建-1" class="headerlink" title="创建"></a>创建</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">arr=[</span><br><span class="line">    [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],</span><br><span class="line">    [<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>],</span><br><span class="line">    [<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">7</span>]</span><br><span class="line">] <span class="comment">#直接创建</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">rows,cols=<span class="number">3</span>,<span class="number">4</span></span><br><span class="line">arr=[[<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(cols)]<span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(rows)]</span><br><span class="line"><span class="built_in">print</span>(arr) <span class="comment">#列表推导式</span></span><br><span class="line">&gt;&gt;&gt;[[<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>],[<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>],[<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>]]</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">rows,cols=<span class="number">3</span>,<span class="number">4</span></span><br><span class="line">arr=[]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row):</span><br><span class="line">    row=[]</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(cols):</span><br><span class="line">        num=<span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">f&quot;请输入第<span class="subst">&#123;i+<span class="number">1</span>&#125;</span>行，第<span class="subst">&#123;j+<span class="number">1</span>&#125;</span>列数字：&quot;</span>))</span><br><span class="line">        row.append(num)</span><br><span class="line">    arr.append(row)</span><br><span class="line"><span class="built_in">print</span>(arr) <span class="comment">#嵌套循环输入</span></span><br></pre></td></tr></table></figure>
+<h3 id="访问二维数组"><a href="#访问二维数组" class="headerlink" title="访问二维数组"></a>访问二维数组</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(arr[<span class="number">0</span>][<span class="number">1</span>]) <span class="comment">#输出第一行第二列</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> row <span class="keyword">in</span> arr:</span><br><span class="line">    <span class="keyword">for</span> num <span class="keyword">in</span> row:</span><br><span class="line">        <span class="built_in">print</span>(num,end=<span class="string">&quot; &quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>() <span class="comment">#历遍每一个元素</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">scores=[</span><br><span class="line">    [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">    [<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>]</span><br><span class="line">]</span><br><span class="line"><span class="keyword">for</span> i,j <span class="keyword">in</span> <span class="built_in">enumerate</span>(scores):</span><br><span class="line">    avg=<span class="built_in">sum</span>(j)/<span class="built_in">len</span>(j) <span class="comment">#使用enumerate函数计算平均值</span></span><br></pre></td></tr></table></figure>
+</details>
+
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/05/20/python%E5%87%BD%E6%95%B0/" data-id="cuid3OlRT0uNDZJsBFcZzAONw" data-title="Python函数的使用" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/05/20/python%E5%87%BD%E6%95%B0/" data-id="cuidN2JhUrfBwFP50-jilAM0T" data-title="Python函数的使用" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -373,7 +394,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/05/19/python%E5%A4%8D%E4%B9%A0/" data-id="cuidND5kdJKZLDEAD0FNJUVh6" data-title="Python 列表·元组·字典 完整笔记" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/05/19/python%E5%A4%8D%E4%B9%A0/" data-id="cuidlD_wUehhJB5L6u5VRqHX2" data-title="Python 列表·元组·字典 完整笔记" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -417,7 +438,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/31/Next-js%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/" data-id="cuid7v_es4YJbU0LzmBLNDAI5" data-title="Next.js漏洞复现" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/01/31/Next-js%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/" data-id="cuidvq7NS8sqcrSQW3ogImA2H" data-title="Next.js漏洞复现" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -461,7 +482,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/30/%E7%9F%AD%E4%BF%A1%E8%BD%B0%E7%82%B8/" data-id="cuidsrY4bRBB2ODLM7XPpQsSf" data-title="短信轰炸" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/01/30/%E7%9F%AD%E4%BF%A1%E8%BD%B0%E7%82%B8/" data-id="cuidvxZYzzthKcOo3Hy3hfTyU" data-title="短信轰炸" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -507,7 +528,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/29/%E9%87%8D%E6%94%BE%E5%92%8C%E5%B9%B6%E5%8F%91%E5%88%B7%E7%A5%A8/" data-id="cuidAN0cL-HKKgCnJtotWkwry" data-title="重放和并发刷票" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/01/29/%E9%87%8D%E6%94%BE%E5%92%8C%E5%B9%B6%E5%8F%91%E5%88%B7%E7%A5%A8/" data-id="cuidZKseTpWMVi91O0-QeUSWJ" data-title="重放和并发刷票" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -549,7 +570,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/26/%E4%BB%A3%E7%A0%81%E6%B3%A8%E5%85%A5%E6%88%96%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" data-id="cuidzWAlA7i2yLImB1KBuktsO" data-title="代码注入或命令执行" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/01/26/%E4%BB%A3%E7%A0%81%E6%B3%A8%E5%85%A5%E6%88%96%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" data-id="cuidgPCViXil9eMrrViMpbz2J" data-title="代码注入或命令执行" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -589,7 +610,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/23/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%95%99%E7%A8%8B/" data-id="cuid2I1wtPCT4KuDUCpb2yGTS" data-title="blog发布教程" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/01/23/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%95%99%E7%A8%8B/" data-id="cuid78KRvxsPIugUY74B5Z0FZ" data-title="blog发布教程" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -628,7 +649,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fallshu.github.io/2026/01/22/%E7%AC%AC%E4%B8%80/" data-id="cuid8tsMMdsQHQer37mnjk4gI" data-title="To 鲜虾干" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://fallshu.github.io/2026/01/22/%E7%AC%AC%E4%B8%80/" data-id="cuidM37YqbKQSnkZMoZHWecja" data-title="To 鲜虾干" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
